@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked!</title>
+</head>
+<body>
+    <div class="m-2 px-4 py-3 leading-normal text-green-700 bg-green-100 rounded-lg" role="alert">
+        <p class="font-bold">Successfull!</p>
+        <p>The hacking process is now started.</p>
+      </div>
+      <div class="m-2 px-4 py-3 leading-normal text-red-700 bg-red-100 rounded-lg" role="alert">
+        <p class="font-bold">Period 210116xxxxx</p>
+      </div>
+      <div class="m-2 px-4 py-3 leading-normal text-gray-700 bg-gray-100 rounded-lg" role="alert">
+        <p class="font-bold">Results:</p><br>
+        <h3 id="result"></h3>
+      </div>
+      <button id="select" onclick="myFunction()"class="m-2 border-2 border-blue-500 rounded-lg font-bold text-blue-500 px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white mr-6">
+        GET
+      </button>
+<script>
+    function myFunction() {
+  idArray = new Array()
+  idArray [1] = "DRAGON"
+  idArray [2] = "TIGER"
+
+  document.getElementById("select").onclick = myFunction;
+  randomParagraph = Math.floor(Math.random()*2);
+
+  document.getElementById("result").innerHTML = idArray[randomParagraph + 1];       
+}
+</script>
+</body>
+</html>
